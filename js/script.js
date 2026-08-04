@@ -28,8 +28,9 @@ menuBtn.addEventListener("click", () => {
 
             <nav class="side-nav">
                 <ul>
-                    <li><a href="curriculum.html">CURRICULUM</a></li>
+                     <li><a href="index.html">HOME</a></li>
                     <li><a href="#course">MAGAZINE</a></li>
+                      <li><a href="curriculum.html">CURRICULUM</a></li>
                     <li><a href="#teachersection">LAB MANUAL</a></li>
                     <li><a href="#resultsection">CHEET SHEET</a></li>
                     <li><a href="#testimonials">PREVIOUS YEAR QUESTION PAPER</a></li>

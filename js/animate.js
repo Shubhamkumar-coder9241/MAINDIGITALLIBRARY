@@ -46,26 +46,26 @@
 //   }
 // })
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.matchMedia({
-  "(min-width: 1024px)": function () {
-    const cards  = gsap.utils.toArray("#teacher-desktop .teacherinfo");
-    const images = gsap.utils.toArray("#teacher-desktop .fimg");
-    const steps  = cards.length - 1;
+// ScrollTrigger.matchMedia({
+//   "(min-width: 1024px)": function () {
+//     const cards  = gsap.utils.toArray("#teacher-desktop .teacherinfo");
+//     const images = gsap.utils.toArray("#teacher-desktop .fimg");
+//     const steps  = cards.length - 1;
 
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: "#teacher-desktop",
-        start: "top top",
-        end: () => `+=${steps * window.innerHeight}`,
-        scrub: 1,
-        pin: true,
-        anticipatePin: 1,
-        invalidateOnRefresh: true,
-      }
-    })
-    .to(cards,  { yPercent: -100 * steps, ease: "none" }, 0)
-    .to(images, { yPercent: -100 * steps, ease: "none" }, 0);
-  }
-});
+//     gsap.timeline({
+//       scrollTrigger: {
+//         trigger: "#teacher-desktop",
+//         start: "top top",
+//         end: () => `+=${steps * window.innerHeight}`,
+//         scrub: 1,
+//         pin: true,
+//         anticipatePin: 1,
+//         invalidateOnRefresh: true,
+//       }
+//     })
+//     .to(cards,  { yPercent: -100 * steps, ease: "none" }, 0)
+//     .to(images, { yPercent: -100 * steps, ease: "none" }, 0);
+//   }
+// });
