@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuition Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +30,25 @@
                         aria-hidden="true"></i></button>
             </div>
         </header>
+          <div class="side-menu" id="sideMenu">
+              <div class="side-menu-inner">
+
+             <button class="side-close" id="closeMenu">&times;</button>
+
+             <nav class="side-nav">
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Magazine.html">MAGAZINE</a></li>
+                <li><a href="curriculum.html">CURRICULUM</a></li>
+                <li><a href="#">LAB MANUAL</a></li>
+                <li><a href="#">CHEAT SHEET</a></li>
+                <li><a href="#">PREVIOUS YEAR QUESTION PAPER</a></li>
+                <li><a href="Notes.html">NOTES</a></li>
+                 </ul>
+              </nav>
+
+               </div>
+             </div>
 
         <section
             class="hero w-full min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-20 px-6 md:px-10 lg:px-16 xl:px-24 py-12">
@@ -126,7 +147,8 @@
                 <p>🎓 Semester I – VI</p>
             </div>
 
-            <button id="enrollBtn"
+            <a href="curriculum.html">
+                <button id="enrollBtn"
                 class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
@@ -134,6 +156,7 @@
                 </svg>
                 View Curriculum
             </button>
+            </a>
 
         </div>
 
@@ -797,7 +820,7 @@
     <script src="js/animate.js"></script>
     <script src="js/hero.js"></script>
     <script src="js/course.js"></script>
-
+    <script src="js/nav.js"> </script>
     <script src="js/script.js"></script>
 
 

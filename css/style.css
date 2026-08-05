@@ -284,6 +284,16 @@ font-size: 1.5vw;
     /* color: #111827; */
     color: #0a0a0a;
 }
+/* Add these lines */
+
+.side-menu {
+    left: -300px;              /* Hide menu outside the screen */
+    transition: left 0.3s ease;
+}
+
+.side-menu.active {
+    left: 0;                   /* Show menu */
+}
 
 /* end side mune */
 
