@@ -19,6 +19,17 @@
 
 <body>
     <div id="cursor"></div>
+    <!-- ================= Loader ================= -->
+
+    <div id="loader"
+        class="fixed inset-0 z-[9999] bg-black flex items-center justify-center">
+
+        <h1 class="loader-text text-white text-5xl md:text-7xl font-black tracking-widest">
+            DIGITAL LIBRARY
+        </h1>
+
+    </div>
+
     <div id="main">
         <header id="header">
             <div id="name">
@@ -30,6 +41,7 @@
                         aria-hidden="true"></i></button>
             </div>
         </header>
+
           <div class="side-menu" id="sideMenu">
               <div class="side-menu-inner">
 
@@ -40,8 +52,8 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="Magazine.html">MAGAZINE</a></li>
                 <li><a href="curriculum.html">CURRICULUM</a></li>
-                <li><a href="#">LAB MANUAL</a></li>
-                <li><a href="#">CHEAT SHEET</a></li>
+                <li><a href="LabManual.html">LAB MANUAL</a></li>
+                <li><a href="cheetSheet.html">CHEAT SHEET</a></li>
                 <li><a href="PYQ.html">PREVIOUS YEAR QUESTION PAPER</a></li>
                 <li><a href="Notes.html">NOTES</a></li>
                  </ul>
@@ -177,7 +189,8 @@
                 <p>⬇️ PDF Download</p>
             </div>
 
-            <button id="enrollBtn"
+           <a href="Notes.html">
+             <button id="enrollBtn"
                 class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
@@ -185,6 +198,7 @@
                 </svg>
                 View Notes
             </button>
+           </a>
 
         </div>
 
@@ -205,7 +219,8 @@
                 <p>🔬 Department-wise</p>
             </div>
 
-            <button id="enrollBtn"
+           <a href="LabManual.html">
+             <button id="enrollBtn"
                 class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
@@ -214,6 +229,7 @@
                 Open Manuals
             </button>
 
+           </a>
         </div>
 
         <!-- Card 4 -->
@@ -233,7 +249,8 @@
                 <p>📚 All Branches</p>
             </div>
 
-            <button id="enrollBtn"
+           <a href="PYQ.html">
+             <button id="enrollBtn"
                 class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 transition-all duration-150">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
@@ -241,6 +258,7 @@
                 </svg>
                 View Papers
             </button>
+           </a>
 
         </div>
 
@@ -261,7 +279,8 @@
                 <p>📚 Subject-wise</p>
             </div>
 
-            <button id="enrollBtn"
+           <a href="cheetSheet.html">
+             <button id="enrollBtn"
                 class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 transition-all duration-150">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
@@ -269,6 +288,7 @@
                 </svg>
                 Explore Sheets
             </button>
+           </a>
 
         </div>
 
@@ -289,7 +309,8 @@
                 <p>🎉 Campus Highlights</p>
             </div>
 
-            <button id="enrollBtn"
+           <a href="Magazine.html">
+             <button id="enrollBtn"
                 class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 transition-all duration-150">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
@@ -297,16 +318,19 @@
                 </svg>
                 Read Magazine
             </button>
+           </a>
 
         </div>
 
     </div>
 
     <div class="flex justify-center mt-8">
-        <button
+       <a href="Notes.html">
+         <button
             class="inline-flex items-center gap-2 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
             Explore All Digital Library Resources
         </button>
+       </a>
     </div>
 
 </section>
@@ -818,6 +842,7 @@
 
 
     <script src="js/animate.js"></script>
+    <script src="js/loadinganimation.js"></script>
     <script src="js/hero.js"></script>
     <script src="js/course.js"></script>
     <script src="js/nav.js"> </script>
