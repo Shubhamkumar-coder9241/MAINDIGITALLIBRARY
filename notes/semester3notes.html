@@ -301,44 +301,7 @@
 
 
 
-        <!-- ================= Semester Cards ================= -->
-
-        <section id="semesterCards" class="py-20 bg-slate-50">
-
-            <div class="max-w-7xl mx-auto px-5">
-
-                <!-- Section Heading -->
-
-                <div class="text-center mb-16">
-                    <span
-                        class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-5 py-2 rounded-full font-semibold">
-
-                        <i class="fa-solid fa-graduation-cap"></i>
-
-                        COMPUTER SCIENCE & ENGINEERING
-
-                    </span>
-
-                    <h2 class="text-5xl font-bold mt-6">
-
-                        Semester Wise Notes
-
-                    </h2>
-
-                    <p class="text-gray-600 mt-5 max-w-3xl mx-auto">
-
-                        Download the Computer Science & Engineering notes
-                        for first semester. Each PDF contains subject details,
-                        practicals, credits, and syllabus.
-
-                    </p>
-
-                </div>
-
-
-                <!-- Cards -->
-
-                <!-- ================= Semester Selection ================= -->
+         <!-- ================= Semester Selection ================= -->
 
                 <section id="semesterCards" class="bg-slate-50 py-20">
 
@@ -381,7 +344,7 @@
                                 </div>
 
                                 <!-- Responsive Table -->
-                                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                                <div id="semesterGrid" class="bg-white rounded-2xl shadow-lg overflow-hidden">
 
                                     <!-- Header (Hidden on Mobile) -->
                                     <div class="hidden md:grid grid-cols-12 bg-blue-600 text-white font-semibold">
@@ -396,7 +359,7 @@
 
                                     <!-- Row 1 -->
                                     <div
-                                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
+                                        class="note-row  grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
 
                                         <div class="md:col-span-9">
                                             <p class="text-xs text-gray-500 md:hidden mb-1">
@@ -404,7 +367,7 @@
                                             </p>
 
                                             <h3 class="font-medium text-slate-800">
-                                                Engineering Mathematics Unit 1 Notes
+                                                Programming with C
                                             </h3>
                                         </div>
 
@@ -418,7 +381,7 @@
 
                                     <!-- Row 2 -->
                                     <div
-                                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
+                                        class="note-row  grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
 
                                         <div class="md:col-span-9">
                                             <p class="text-xs text-gray-500 md:hidden mb-1">
@@ -426,7 +389,7 @@
                                             </p>
 
                                             <h3 class="font-medium text-slate-800">
-                                                Engineering Physics Chapter 2
+                                                Web Technology
                                             </h3>
                                         </div>
 
@@ -440,7 +403,7 @@
 
                                     <!-- Row 3 -->
                                     <div
-                                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
+                                        class="note-row  grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
 
                                         <div class="md:col-span-9">
                                             <p class="text-xs text-gray-500 md:hidden mb-1">
@@ -448,7 +411,7 @@
                                             </p>
 
                                             <h3 class="font-medium text-slate-800">
-                                                Communication Skills Notes
+                                                Applied Chemistry -B
                                             </h3>
                                         </div>
 
@@ -462,7 +425,7 @@
 
                                     <!-- Row 4 -->
                                     <div
-                                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
+                                        class="note-row  grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
 
                                         <div class="md:col-span-9">
                                             <p class="text-xs text-gray-500 md:hidden mb-1">
@@ -470,7 +433,7 @@
                                             </p>
 
                                             <h3 class="font-medium text-slate-800">
-                                                Computer Fundamentals Complete Notes
+                                                Communication Skills (English)
                                             </h3>
                                         </div>
 
@@ -484,7 +447,7 @@
 
                                     <!-- Row 5 -->
                                     <div
-                                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
+                                        class="note-row grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
 
                                         <div class="md:col-span-9">
                                             <p class="text-xs text-gray-500 md:hidden mb-1">
@@ -492,7 +455,7 @@
                                             </p>
 
                                             <h3 class="font-medium text-slate-800">
-                                                Workshop Practice Notes
+                                                Applied Mathematics -B
                                             </h3>
                                         </div>
 
@@ -503,7 +466,49 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <!-- row 6 -->
+                                    <div
+                                        class="note-row  grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
 
+                                        <div class="md:col-span-9">
+                                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                                Notes Name
+                                            </p>
+
+                                            <h3 class="font-medium text-slate-800">
+                                                Professional Ethics
+                                            </h3>
+                                        </div>
+
+                                        <div class="md:col-span-3 md:text-center">
+                                            <a href="notes/workshop.pdf"
+                                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                                Download PDF
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="note-row grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
+
+                                        <div class="md:col-span-9">
+                                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                                Notes Name
+                                            </p>
+
+                                            <h3 class="font-medium text-slate-800">
+                                                Essence of Indian Knowledge System and
+                                                Tradition
+
+                                            </h3>
+                                        </div>
+
+                                        <div class="md:col-span-3 md:text-center">
+                                            <a href="notes/workshop.pdf"
+                                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                                Download PDF
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -512,10 +517,6 @@
                     </div>
 
                 </section>
-
-            </div>
-
-        </section>
 
 
 
@@ -661,6 +662,7 @@
     <!-- <script src="../js/script.js"></script>  -->
     <script src="../js/nav.js"></script>
     <script src="../js/hero.js"></script>
+    <script src="../js/filp.js"></script>
 
 
 
