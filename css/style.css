@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 
+
+}
+::selection{
+    background-color: #000;
+    color: #ffff;
 }
 #cursor {
     height: 20px;
@@ -283,6 +288,16 @@ font-size: 1.5vw;
     text-decoration: none;
     /* color: #111827; */
     color: #0a0a0a;
+}
+/* Add these lines */
+
+.side-menu {
+    left: -300px;              /* Hide menu outside the screen */
+    transition: left 0.3s ease;
+}
+
+.side-menu.active {
+    left: 0;                   /* Show menu */
 }
 
 /* end side mune */

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuition Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +19,24 @@
 
 <body>
     <div id="cursor"></div>
+    <!-- ================= Loader ================= -->
+
+    <div id="loader" class="fixed inset-0 z-[9999] bg-black flex items-center justify-center">
+
+        <!-- <h1 class="loader-text text-white text-5xl md:text-7xl font-black tracking-widest">
+            DIGITAL LIBRARY
+        </h1> -->
+        <h1 class="loader-text
+           text-white
+           text-center
+           font-black
+           uppercase
+           px-4
+           text-[10vw] sm:text-[8vw] md:text-[6vw] lg:text-7xl">
+            DIGITAL LIBRARY
+        </h1>
+    </div>
+
     <div id="main">
         <header id="header">
             <div id="name">
@@ -29,6 +49,26 @@
             </div>
         </header>
 
+        <div class="side-menu" id="sideMenu">
+            <div class="side-menu-inner">
+
+                <button class="side-close" id="closeMenu">&times;</button>
+
+                <nav class="side-nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="Magazine.html">MAGAZINE</a></li>
+                        <li><a href="curriculum.html">CURRICULUM</a></li>
+                        <li><a href="LabManual.html">LAB MANUAL</a></li>
+                        <li><a href="cheetSheet.html">CHEAT SHEET</a></li>
+                        <li><a href="PYQ.html">PREVIOUS YEAR QUESTION PAPER</a></li>
+                        <li><a href="Notes.html">NOTES</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
         <section
             class="hero w-full min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-20 px-6 md:px-10 lg:px-16 xl:px-24 py-12">
 
@@ -36,7 +76,7 @@
             <div class="flex-1 text-center lg:text-left">
 
                 <span class="inline-block rounded-full bg-gray-100 px-5 py-2 text-sm font-medium">
-                     Government Polytechnic Muzaffarpur Digital Library
+                    Government Polytechnic Muzaffarpur Digital Library
                 </span>
 
                 <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
@@ -48,11 +88,17 @@
                 </p>
 
                 <div class="mt-5 flex flex-wrap justify-center lg:justify-start gap-4">
-                    <span class="rounded-full bg-black text-white px-6 py-3 text-lg font-semibold">CURRICULUM</span>
-                    <span class="rounded-full bg-black text-white px-6 py-3 text-lg font-semibold">NOTES</span>
-                    <span class="rounded-full bg-black text-white px-6 py-3 text-lg font-semibold">Previous
-                        Papers</span>
-                        <span class="rounded-full bg-black text-white px-6 py-3 text-lg font-semibold">CHEET SHEET</span>
+                    <a href="curriculum.html"><span
+                            class="rounded-full bg-black text-white px-6 py-3 text-lg font-semibold">CURRICULUM</span></a>
+                    <a href="Notes.html"> <span
+                            class="rounded-full bg-black text-white px-6 py-3 text-lg font-semibold">NOTES</span></a>
+                    <a href="PYQ.html"> <span
+                            class="rounded-full bg-black text-white px-6 py-3 text-lg font-semibold">Previous
+                            Papers</span></a>
+                    <a href="cheetSheet.html">
+                        <span class="rounded-full bg-black text-white px-6 py-3 text-lg font-semibold">CHEET
+                            SHEET</span>
+                    </a>
                 </div>
 
                 <ul class="mt-8 space-y-3 text-gray-600 text-base md:text-lg inline-block lg:block text-left">
@@ -61,10 +107,10 @@
                     <li>✓ 24×7 Online Access</li>
                 </ul>
                 <div class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                    <a href="admission.html" id="openEnrollBtn" type="button"
+                    <a href="Notes.html" id="openEnrollBtn" type="button"
                         class="rounded-lg bg-black text-white px-8 py-4 font-semibold transition hover:bg-gray-800">Browse
                         Library</a>
-                    <a href="#coursesContainer"
+                    <a href="curriculum.html"
                         class="rounded-lg border-2 border-black px-8 py-4 font-semibold transition hover:bg-black hover:text-white">Explore
                         Resources</a>
                 </div>
@@ -88,7 +134,7 @@
         </section>
 
 
-       
+
 
 
         <div id="course">
@@ -105,678 +151,691 @@
                 </button>
 
             </div>
-<section class="px-5 pb-16">
+            <section class="px-5 pb-16">
 
-    <div id="coursesContainer" class="grid gap-8 grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-8">
+                <div id="coursesContainer" class="grid gap-8 grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-8">
 
-        <!-- Card 1 -->
-        <div class="course border border-zinc-700 rounded-2xl p-6">
+                    <!-- Card 1 -->
+                    <div class="course border border-zinc-700 rounded-2xl p-6">
 
-            <h2 class="text-3xl font-bold mt-5">
-                Curriculum
-            </h2>
+                        <h2 class="text-3xl font-bold mt-5">
+                            Curriculum
+                        </h2>
 
-            <p class="text-zinc-400 mt-3">
-                Download the latest semester-wise curriculum and syllabus for all diploma branches.
-            </p>
+                        <p class="text-zinc-400 mt-3">
+                            Download the latest semester-wise curriculum and syllabus for all diploma branches.
+                        </p>
 
-            <div class="mt-5 space-y-2">
-                <p>📘 Branch-wise Syllabus</p>
-                <p>📅 Updated Curriculum</p>
-                <p>🎓 Semester I – VI</p>
-            </div>
+                        <div class="mt-5 space-y-2">
+                            <p>📘 Branch-wise Syllabus</p>
+                            <p>📅 Updated Curriculum</p>
+                            <p>🎓 Semester I – VI</p>
+                        </div>
 
-            <button id="enrollBtn"
-                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-                View Curriculum
-            </button>
+                        <a href="curriculum.html">
+                            <button id="enrollBtn"
+                                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                View Curriculum
+                            </button>
+                        </a>
 
-        </div>
+                    </div>
 
-        <!-- Card 2 -->
-        <div class="course border border-zinc-700 rounded-2xl p-6">
+                    <!-- Card 2 -->
+                    <div class="course border border-zinc-700 rounded-2xl p-6">
 
-            <h2 class="text-3xl font-bold mt-5">
-                Lecture Notes
-            </h2>
+                        <h2 class="text-3xl font-bold mt-5">
+                            Lecture Notes
+                        </h2>
 
-            <p class="text-zinc-400 mt-3">
-                Access faculty-prepared notes covering every subject and semester.
-            </p>
+                        <p class="text-zinc-400 mt-3">
+                            Access faculty-prepared notes covering every subject and semester.
+                        </p>
 
-            <div class="mt-5 space-y-2">
-                <p>📝 Subject-wise Notes</p>
-                <p>📂 Semester-wise</p>
-                <p>⬇️ PDF Download</p>
-            </div>
+                        <div class="mt-5 space-y-2">
+                            <p>📝 Subject-wise Notes</p>
+                            <p>📂 Semester-wise</p>
+                            <p>⬇️ PDF Download</p>
+                        </div>
 
-            <button id="enrollBtn"
-                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-                View Notes
-            </button>
+                        <a href="Notes.html">
+                            <button id="enrollBtn"
+                                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                View Notes
+                            </button>
+                        </a>
 
-        </div>
+                    </div>
 
-        <!-- Card 3 -->
-        <div class="course border border-zinc-700 rounded-2xl p-6">
+                    <!-- Card 3 -->
+                    <div class="course border border-zinc-700 rounded-2xl p-6">
 
-            <h2 class="text-3xl font-bold mt-5">
-                Lab Manuals
-            </h2>
+                        <h2 class="text-3xl font-bold mt-5">
+                            Lab Manuals
+                        </h2>
 
-            <p class="text-zinc-400 mt-3">
-                Download practical manuals for workshops and laboratory subjects.
-            </p>
+                        <p class="text-zinc-400 mt-3">
+                            Download practical manuals for workshops and laboratory subjects.
+                        </p>
 
-            <div class="mt-5 space-y-2">
-                <p>🧪 Practical Experiments</p>
-                <p>📖 Lab Record Format</p>
-                <p>🔬 Department-wise</p>
-            </div>
+                        <div class="mt-5 space-y-2">
+                            <p>🧪 Practical Experiments</p>
+                            <p>📖 Lab Record Format</p>
+                            <p>🔬 Department-wise</p>
+                        </div>
 
-            <button id="enrollBtn"
-                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-                Open Manuals
-            </button>
+                        <a href="LabManual.html">
+                            <button id="enrollBtn"
+                                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                Open Manuals
+                            </button>
 
-        </div>
+                        </a>
+                    </div>
 
-        <!-- Card 4 -->
-        <div class="course border border-zinc-700 rounded-2xl p-6">
+                    <!-- Card 4 -->
+                    <div class="course border border-zinc-700 rounded-2xl p-6">
 
-            <h2 class="text-3xl font-bold mt-5">
-                Previous Year Papers
-            </h2>
+                        <h2 class="text-3xl font-bold mt-5">
+                            Previous Year Papers
+                        </h2>
 
-            <p class="text-zinc-400 mt-3">
-                Prepare effectively using previous semester examination question papers.
-            </p>
+                        <p class="text-zinc-400 mt-3">
+                            Prepare effectively using previous semester examination question papers.
+                        </p>
 
-            <div class="mt-5 space-y-2">
-                <p>📄 Semester-wise Papers</p>
-                <p>🎯 Exam Preparation</p>
-                <p>📚 All Branches</p>
-            </div>
+                        <div class="mt-5 space-y-2">
+                            <p>📄 Semester-wise Papers</p>
+                            <p>🎯 Exam Preparation</p>
+                            <p>📚 All Branches</p>
+                        </div>
 
-            <button id="enrollBtn"
-                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 transition-all duration-150">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-                View Papers
-            </button>
+                        <a href="PYQ.html">
+                            <button id="enrollBtn"
+                                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 transition-all duration-150">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                View Papers
+                            </button>
+                        </a>
 
-        </div>
+                    </div>
 
-        <!-- Card 5 -->
-        <div class="course border border-zinc-700 rounded-2xl p-6">
+                    <!-- Card 5 -->
+                    <div class="course border border-zinc-700 rounded-2xl p-6">
 
-            <h2 class="text-3xl font-bold mt-5">
-                Cheat Sheets
-            </h2>
+                        <h2 class="text-3xl font-bold mt-5">
+                            Cheat Sheets
+                        </h2>
 
-            <p class="text-zinc-400 mt-3">
-                Quick revision sheets containing important formulas, definitions, and concepts.
-            </p>
+                        <p class="text-zinc-400 mt-3">
+                            Quick revision sheets containing important formulas, definitions, and concepts.
+                        </p>
 
-            <div class="mt-5 space-y-2">
-                <p>⚡ Quick Revision</p>
-                <p>📌 Important Formulas</p>
-                <p>📚 Subject-wise</p>
-            </div>
+                        <div class="mt-5 space-y-2">
+                            <p>⚡ Quick Revision</p>
+                            <p>📌 Important Formulas</p>
+                            <p>📚 Subject-wise</p>
+                        </div>
 
-            <button id="enrollBtn"
-                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 transition-all duration-150">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-                Explore Sheets
-            </button>
+                        <a href="cheetSheet.html">
+                            <button id="enrollBtn"
+                                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 transition-all duration-150">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                Explore Sheets
+                            </button>
+                        </a>
 
-        </div>
+                    </div>
 
-        <!-- Card 6 -->
-        <div class="course border border-zinc-700 rounded-2xl p-6">
+                    <!-- Card 6 -->
+                    <div class="course border border-zinc-700 rounded-2xl p-6">
 
-            <h2 class="text-3xl font-bold mt-5">
-                College Magazines
-            </h2>
+                        <h2 class="text-3xl font-bold mt-5">
+                            College Magazines
+                        </h2>
 
-            <p class="text-zinc-400 mt-3">
-                Read annual college magazines featuring technical articles, achievements, and campus activities.
-            </p>
+                        <p class="text-zinc-400 mt-3">
+                            Read annual college magazines featuring technical articles, achievements, and campus
+                            activities.
+                        </p>
 
-            <div class="mt-5 space-y-2">
-                <p>📖 Annual Editions</p>
-                <p>🏆 Student Achievements</p>
-                <p>🎉 Campus Highlights</p>
-            </div>
+                        <div class="mt-5 space-y-2">
+                            <p>📖 Annual Editions</p>
+                            <p>🏆 Student Achievements</p>
+                            <p>🎉 Campus Highlights</p>
+                        </div>
 
-            <button id="enrollBtn"
-                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 transition-all duration-150">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-                Read Magazine
-            </button>
+                        <a href="Magazine.html">
+                            <button id="enrollBtn"
+                                class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 transition-all duration-150">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                Read Magazine
+                            </button>
+                        </a>
 
-        </div>
+                    </div>
 
-    </div>
+                </div>
 
-    <div class="flex justify-center mt-8">
-        <button
-            class="inline-flex items-center gap-2 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
-            Explore All Digital Library Resources
-        </button>
-    </div>
+                <div class="flex justify-center mt-8">
+                    <a href="Notes.html">
+                        <button
+                            class="inline-flex items-center gap-2 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 transition-all duration-150">
+                            Explore All Digital Library Resources
+                        </button>
+                    </a>
+                </div>
 
-</section>
+            </section>
         </div>
         <br>
 
 
 
-       
 
-<div id="resultsection" class="bg-gradient-to-b from-blue-50 to-white py-10 m-10">
-    <section class="max-w-7xl mx-auto px-5">
 
-        <div class="flex justify-center mb-8">
-            <div
-                class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full font-semibold">
-                <i class="fa-solid fa-book-open-reader"></i>
-                <span>DIGITAL LIBRARY RESOURCES</span>
-            </div>
-        </div>
+        <div id="resultsection" class="bg-gradient-to-b from-blue-50 to-white py-10 m-10">
+            <section class="max-w-7xl mx-auto px-5">
 
-        <div class="text-center mb-16">
-            <h1 class="text-5xl md:text-6xl font-bold">
-                Engineering <span class="text-blue-600">Learning Resources</span>
-            </h1>
-        </div>
-
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <p class="text-lg text-gray-700 leading-relaxed">
-                Access a wide collection of engineering books, lecture notes,
-                previous year question papers, lab manuals, and technical
-                resources specially organized for Government Polytechnic
-                Muzaffarpur students.
-            </p>
-        </div>
-
-        <!-- Resource Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-
-            <!-- Books -->
-            <div
-                class="bg-white border-2 border-blue-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
-                <div class="text-5xl mb-4">📘</div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-2">
-                    Engineering Books
-                </h3>
-                <div class="space-y-3">
-                    <p class="text-gray-600"><span class="font-semibold text-blue-600">2,500+</span> Digital Books</p>
-                    <p class="text-gray-600">All Diploma Branches</p>
-                    <p class="text-gray-600">Updated Every Semester</p>
+                <div class="flex justify-center mb-8">
+                    <div
+                        class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full font-semibold">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <span>DIGITAL LIBRARY RESOURCES</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Notes -->
-            <div
-                class="bg-white border-2 border-green-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
-                <div class="text-5xl mb-4">📝</div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-2">
-                    Lecture Notes
-                </h3>
-                <div class="space-y-3">
-                    <p class="text-gray-600"><span class="font-semibold text-green-600">1,500+</span> Subject Notes</p>
-                    <p class="text-gray-600">Faculty Prepared PDFs</p>
-                    <p class="text-gray-600">Easy Download</p>
+                <div class="text-center mb-16">
+                    <h1 class="text-5xl md:text-6xl font-bold">
+                        Engineering <span class="text-blue-600">Learning Resources</span>
+                    </h1>
                 </div>
-            </div>
 
-            <!-- Question Papers -->
-            <div
-                class="bg-white border-2 border-yellow-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
-                <div class="text-5xl mb-4">📄</div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-2">
-                    Previous Year Papers
-                </h3>
-                <div class="space-y-3">
-                    <p class="text-gray-600"><span class="font-semibold text-yellow-600">500+</span> Question Papers</p>
-                    <p class="text-gray-600">Semester-wise Collection</p>
-                    <p class="text-gray-600">Exam Preparation Support</p>
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Access a wide collection of engineering books, lecture notes,
+                        previous year question papers, lab manuals, and technical
+                        resources specially organized for Government Polytechnic
+                        Muzaffarpur students.
+                    </p>
                 </div>
-            </div>
 
+                <!-- Resource Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+
+                    <!-- Books -->
+                    <div
+                        class="bg-white border-2 border-blue-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="text-5xl mb-4">📘</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">
+                            Engineering Books
+                        </h3>
+                        <div class="space-y-3">
+                            <p class="text-gray-600"><span class="font-semibold text-blue-600">2,500+</span> Digital
+                                Books</p>
+                            <p class="text-gray-600">All Diploma Branches</p>
+                            <p class="text-gray-600">Updated Every Semester</p>
+                        </div>
+                    </div>
+
+                    <!-- Notes -->
+                    <div
+                        class="bg-white border-2 border-green-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="text-5xl mb-4">📝</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">
+                            Lecture Notes
+                        </h3>
+                        <div class="space-y-3">
+                            <p class="text-gray-600"><span class="font-semibold text-green-600">1,500+</span> Subject
+                                Notes</p>
+                            <p class="text-gray-600">Faculty Prepared PDFs</p>
+                            <p class="text-gray-600">Easy Download</p>
+                        </div>
+                    </div>
+
+                    <!-- Question Papers -->
+                    <div
+                        class="bg-white border-2 border-yellow-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="text-5xl mb-4">📄</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">
+                            Previous Year Papers
+                        </h3>
+                        <div class="space-y-3">
+                            <p class="text-gray-600"><span class="font-semibold text-yellow-600">500+</span> Question
+                                Papers</p>
+                            <p class="text-gray-600">Semester-wise Collection</p>
+                            <p class="text-gray-600">Exam Preparation Support</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Featured Resources -->
+                <div class="bg-gradient-to-r from-blue-500 to-violet-600 rounded-2xl p-8 text-white mb-12">
+                    <h2 class="text-3xl font-bold mb-8">
+                        Featured CSE Resources
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
+                            <div class="text-2xl font-bold mb-2">
+                                Curriculum
+                            </div>
+                            <p class="mb-2">
+                                Latest CSE Syllabus
+                            </p>
+                            <p class="text-sm text-blue-100">
+                                Semester I - VI
+                            </p>
+                        </div>
+
+                        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
+                            <div class="text-2xl font-bold mb-2">
+                                Lecture Notes
+                            </div>
+                            <p class="mb-2">
+                                Subject-wise Study Notes
+                            </p>
+                            <p class="text-sm text-blue-100">
+                                Semester I - VI
+                            </p>
+                        </div>
+
+                        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
+                            <div class="text-2xl font-bold mb-2">
+                                Lab Manuals
+                            </div>
+                            <p class="mb-2">
+                                Practical & Experiment Guides
+                            </p>
+                            <p class="text-sm text-blue-100">
+                                Semester I - VI
+                            </p>
+                        </div>
+
+                        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
+                            <div class="text-2xl font-bold mb-2">
+                                Previous Papers
+                            </div>
+                            <p class="mb-2">
+                                Semester Exam Questions
+                            </p>
+                            <p class="text-sm text-blue-100">
+                                Semester I - VI
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex justify-center px-4">
+                    <button
+                        class="inline-flex items-center gap-2 bg-blue-600 text-white px-5 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-lg font-semibold hover:bg-blue-700 transition-all duration-200 w-full sm:w-auto justify-center max-w-md">
+                        <i class="fa-solid fa-book"></i>
+                        Explore All Library Resources
+                    </button>
+                </div>
+
+            </section>
         </div>
-
-        <!-- Featured Resources -->
-       <div class="bg-gradient-to-r from-blue-500 to-violet-600 rounded-2xl p-8 text-white mb-12">
-    <h2 class="text-3xl font-bold mb-8">
-        Featured CSE Resources
-    </h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
-            <div class="text-2xl font-bold mb-2">
-                Curriculum
-            </div>
-            <p class="mb-2">
-                Latest CSE Syllabus
-            </p>
-            <p class="text-sm text-blue-100">
-                Semester I - VI
-            </p>
-        </div>
-
-        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
-            <div class="text-2xl font-bold mb-2">
-                Lecture Notes
-            </div>
-            <p class="mb-2">
-                Subject-wise Study Notes
-            </p>
-            <p class="text-sm text-blue-100">
-                Semester I - VI
-            </p>
-        </div>
-
-        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
-            <div class="text-2xl font-bold mb-2">
-                Lab Manuals
-            </div>
-            <p class="mb-2">
-                Practical & Experiment Guides
-            </p>
-            <p class="text-sm text-blue-100">
-                Semester I - VI
-            </p>
-        </div>
-
-        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
-            <div class="text-2xl font-bold mb-2">
-                Previous Papers
-            </div>
-            <p class="mb-2">
-                Semester Exam Questions
-            </p>
-            <p class="text-sm text-blue-100">
-                Semester I - VI
-            </p>
-        </div>
-
-    </div>
-</div>
-
-        <div class="flex justify-center px-4">
-            <button
-                class="inline-flex items-center gap-2 bg-blue-600 text-white px-5 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-lg font-semibold hover:bg-blue-700 transition-all duration-200 w-full sm:w-auto justify-center max-w-md">
-                <i class="fa-solid fa-book"></i>
-                Explore All Library Resources
-            </button>
-        </div>
-
-    </section>
-</div>
 
         <div id="testimonials" class="bg-slate-50 py-20">
-    <section class="max-w-7xl mx-auto px-5">
+            <section class="max-w-7xl mx-auto px-5">
 
-        <div class="flex justify-center mb-8">
-            <div
-                class="inline-flex items-center gap-2 bg-slate-100 text-slate-900 px-4 py-2 rounded-full font-semibold">
-                <i class="fa-solid fa-quote-left"></i>
-                <span>STUDENT REVIEWS</span>
-            </div>
-        </div>
-
-        <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-bold">
-                What Our <span class="text-blue-600">Polytechnic Students Say</span>
-            </h2>
-            <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
-                Feedback from Computer Science & Engineering diploma students who regularly use the Digital Library for their semester preparation.
-            </p>
-        </div>
-
-        <div class="grid gap-8 lg:grid-cols-3 container">
-
-            <!-- Review 1 -->
-            <div class="box test-card bg-white rounded-3xl p-0 shadow-sm transition-all duration-500">
-                <div class="slide slide1">
-                    <div class="icon bg-blue-100 flex items-center justify-center text-4xl text-blue-600">
-                        A
+                <div class="flex justify-center mb-8">
+                    <div
+                        class="inline-flex items-center gap-2 bg-slate-100 text-slate-900 px-4 py-2 rounded-full font-semibold">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <span>STUDENT REVIEWS</span>
                     </div>
                 </div>
 
-                <div class="slide slide2 p-8">
-                    <div class="content flex items-center gap-4 mb-4">
-                        <div
-                            class="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center text-2xl text-blue-600">
-                            A
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold">
+                        What Our <span class="text-blue-600">Polytechnic Students Say</span>
+                    </h2>
+                    <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
+                        Feedback from Computer Science & Engineering diploma students who regularly use the Digital
+                        Library for their semester preparation.
+                    </p>
+                </div>
+
+                <div class="grid gap-8 lg:grid-cols-3 container">
+
+                    <!-- Review 1 -->
+                    <div class="box test-card bg-white rounded-3xl p-0 shadow-sm transition-all duration-500">
+                        <div class="slide slide1">
+                            <div class="icon bg-blue-100 flex items-center justify-center text-4xl text-blue-600">
+                                A
+                            </div>
                         </div>
 
-                        <div>
-                            <h3 class="text-xl font-semibold">Aman Kumar</h3>
-                            <p class="text-sm text-gray-500">
-                                CSE • 1st Semester
+                        <div class="slide slide2 p-8">
+                            <div class="content flex items-center gap-4 mb-4">
+                                <div
+                                    class="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center text-2xl text-blue-600">
+                                    A
+                                </div>
+
+                                <div>
+                                    <h3 class="text-xl font-semibold">Aman Kumar</h3>
+                                    <p class="text-sm text-gray-500">
+                                        CSE • 1st Semester
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-700 leading-relaxed">
+                                "The curriculum, lecture notes, and cheat sheets helped me understand Programming in C
+                                and Mathematics. Everything is available in one place."
                             </p>
                         </div>
                     </div>
 
-                    <p class="text-gray-700 leading-relaxed">
-                        "The curriculum, lecture notes, and cheat sheets helped me understand Programming in C and Mathematics. Everything is available in one place."
-                    </p>
-                </div>
-            </div>
-
-            <!-- Review 2 -->
-            <div class="box test-card bg-white rounded-3xl p-0 shadow-sm transition-all duration-500">
-                <div class="slide slide1">
-                    <div class="icon bg-green-100 flex items-center justify-center text-4xl text-green-600">
-                        S
-                    </div>
-                </div>
-
-                <div class="slide slide2 p-8">
-                    <div class="content flex items-center gap-4 mb-4">
-                        <div
-                            class="h-14 w-14 rounded-full bg-green-100 flex items-center justify-center text-2xl text-green-600">
-                            S
+                    <!-- Review 2 -->
+                    <div class="box test-card bg-white rounded-3xl p-0 shadow-sm transition-all duration-500">
+                        <div class="slide slide1">
+                            <div class="icon bg-green-100 flex items-center justify-center text-4xl text-green-600">
+                                S
+                            </div>
                         </div>
 
-                        <div>
-                            <h3 class="text-xl font-semibold">Shivam Raj</h3>
-                            <p class="text-sm text-gray-500">
-                                CSE • 3rd Semester
+                        <div class="slide slide2 p-8">
+                            <div class="content flex items-center gap-4 mb-4">
+                                <div
+                                    class="h-14 w-14 rounded-full bg-green-100 flex items-center justify-center text-2xl text-green-600">
+                                    S
+                                </div>
+
+                                <div>
+                                    <h3 class="text-xl font-semibold">Shivam Raj</h3>
+                                    <p class="text-sm text-gray-500">
+                                        CSE • 3rd Semester
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-700 leading-relaxed">
+                                "Previous year question papers and lab manuals made exam preparation much easier. The
+                                Digital Library saves a lot of time."
                             </p>
                         </div>
                     </div>
 
-                    <p class="text-gray-700 leading-relaxed">
-                        "Previous year question papers and lab manuals made exam preparation much easier. The Digital Library saves a lot of time."
-                    </p>
-                </div>
-            </div>
-
-            <!-- Review 3 -->
-            <div class="box test-card bg-white rounded-3xl p-0 shadow-sm transition-all duration-500">
-                <div class="slide slide1">
-                    <div class="icon bg-violet-100 flex items-center justify-center text-4xl text-violet-600">
-                        P
-                    </div>
-                </div>
-
-                <div class="slide slide2 p-8">
-                    <div class="content flex items-center gap-4 mb-4">
-                        <div
-                            class="h-14 w-14 rounded-full bg-violet-100 flex items-center justify-center text-2xl text-violet-600">
-                            P
+                    <!-- Review 3 -->
+                    <div class="box test-card bg-white rounded-3xl p-0 shadow-sm transition-all duration-500">
+                        <div class="slide slide1">
+                            <div class="icon bg-violet-100 flex items-center justify-center text-4xl text-violet-600">
+                                P
+                            </div>
                         </div>
 
-                        <div>
-                            <h3 class="text-xl font-semibold">Priyanshu Kumar</h3>
-                            <p class="text-sm text-gray-500">
-                                CSE • 5th Semester
+                        <div class="slide slide2 p-8">
+                            <div class="content flex items-center gap-4 mb-4">
+                                <div
+                                    class="h-14 w-14 rounded-full bg-violet-100 flex items-center justify-center text-2xl text-violet-600">
+                                    P
+                                </div>
+
+                                <div>
+                                    <h3 class="text-xl font-semibold">Priyanshu Kumar</h3>
+                                    <p class="text-sm text-gray-500">
+                                        CSE • 5th Semester
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-700 leading-relaxed">
+                                "I use the Digital Library regularly for notes, cheat sheets, and technical magazines.
+                                It is one of the most useful academic resources for our department."
                             </p>
                         </div>
                     </div>
 
-                    <p class="text-gray-700 leading-relaxed">
-                        "I use the Digital Library regularly for notes, cheat sheets, and technical magazines. It is one of the most useful academic resources for our department."
+                </div>
+
+            </section>
+        </div>
+
+
+        <div id="faq" class="bg-white py-20">
+
+            <section class="max-w-7xl mx-auto px-5">
+
+                <div class="flex justify-center mb-8">
+                    <div
+                        class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full font-semibold">
+                        <i class="fa-solid fa-question"></i>
+                        <span>FREQUENTLY ASKED QUESTIONS</span>
+                    </div>
+                </div>
+
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold">
+                        Frequently Asked <span class="text-blue-600">Questions</span>
+                    </h2>
+                    <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
+                        Find answers to common questions about syllabus, notes, lab manuals,
+                        previous year papers, and other digital learning resources.
                     </p>
                 </div>
-            </div>
+
+                <div class="faq-grid">
+
+                    <!-- FAQ 1 -->
+                    <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>Where can I download the latest CSE syllabus?</h3>
+                                <p>
+                                    The latest semester-wise curriculum and syllabus are available in the
+                                    <strong>Curriculum</strong> section. Select your semester to download the official
+                                    PDF.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="face face2">
+                            <h2>01</h2>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>Are previous year question papers available?</h3>
+                                <p>
+                                    Yes. The Digital Library provides previous year semester examination papers
+                                    for Computer Science & Engineering to help students prepare effectively.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="face face2">
+                            <h2>02</h2>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>Can I download notes and lab manuals?</h3>
+                                <p>
+                                    Yes. Students can access subject-wise lecture notes, practical lab manuals,
+                                    cheat sheets, and reference materials in PDF format.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="face face2">
+                            <h2>03</h2>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>Which semesters are covered in the Digital Library?</h3>
+                                <p>
+                                    Resources are organized semester-wise for all six diploma semesters,
+                                    including syllabus, notes, previous year papers, lab manuals,
+                                    magazines, and other academic materials.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="face face2">
+                            <h2>04</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
 
         </div>
 
-    </section>
-</div>
 
-
-       <div id="faq" class="bg-white py-20">
-
-    <section class="max-w-7xl mx-auto px-5">
-
-        <div class="flex justify-center mb-8">
-            <div
-                class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full font-semibold">
-                <i class="fa-solid fa-question"></i>
-                <span>FREQUENTLY ASKED QUESTIONS</span>
-            </div>
-        </div>
-
-        <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-bold">
-                Frequently Asked <span class="text-blue-600">Questions</span>
-            </h2>
-            <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
-                Find answers to common questions about syllabus, notes, lab manuals,
-                previous year papers, and other digital learning resources.
-            </p>
-        </div>
-
-        <div class="faq-grid">
-
-            <!-- FAQ 1 -->
-            <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
-                <div class="face face1">
-                    <div class="content">
-                        <h3>Where can I download the latest CSE syllabus?</h3>
-                        <p>
-                            The latest semester-wise curriculum and syllabus are available in the
-                            <strong>Curriculum</strong> section. Select your semester to download the official PDF.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="face face2">
-                    <h2>01</h2>
-                </div>
-            </div>
-
-            <!-- FAQ 2 -->
-            <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
-                <div class="face face1">
-                    <div class="content">
-                        <h3>Are previous year question papers available?</h3>
-                        <p>
-                            Yes. The Digital Library provides previous year semester examination papers
-                            for Computer Science & Engineering to help students prepare effectively.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="face face2">
-                    <h2>02</h2>
-                </div>
-            </div>
-
-            <!-- FAQ 3 -->
-            <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
-                <div class="face face1">
-                    <div class="content">
-                        <h3>Can I download notes and lab manuals?</h3>
-                        <p>
-                            Yes. Students can access subject-wise lecture notes, practical lab manuals,
-                            cheat sheets, and reference materials in PDF format.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="face face2">
-                    <h2>03</h2>
-                </div>
-            </div>
-
-            <!-- FAQ 4 -->
-            <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
-                <div class="face face1">
-                    <div class="content">
-                        <h3>Which semesters are covered in the Digital Library?</h3>
-                        <p>
-                            Resources are organized semester-wise for all six diploma semesters,
-                            including syllabus, notes, previous year papers, lab manuals,
-                            magazines, and other academic materials.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="face face2">
-                    <h2>04</h2>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-</div>
-
-       
 
         <footer class="bg-slate-950 text-slate-200 py-16">
-    <section class="max-w-7xl mx-auto px-5">
-        <div class="grid gap-10 lg:grid-cols-4">
+            <section class="max-w-7xl mx-auto px-5">
+                <div class="grid gap-10 lg:grid-cols-4">
 
-            <!-- About -->
-            <div>
-                <h3 class="text-2xl font-bold text-white mb-4">
-                    GP Muzaffarpur Digital Library
-                </h3>
+                    <!-- About -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4">
+                            GP Muzaffarpur Digital Library
+                        </h3>
 
-                <p class="text-slate-400 leading-relaxed">
-                    A digital learning platform providing engineering books,
-                    lecture notes, previous year question papers, lab manuals,
-                    and academic resources for the students of Government
-                    Polytechnic Muzaffarpur.
-                </p>
-            </div>
+                        <p class="text-slate-400 leading-relaxed">
+                            A digital learning platform providing engineering books,
+                            lecture notes, previous year question papers, lab manuals,
+                            and academic resources for the students of Government
+                            Polytechnic Muzaffarpur.
+                        </p>
+                    </div>
 
-            <!-- Quick Links -->
-            <div>
-                <h4 class="text-xl font-semibold text-white mb-4">
-                    Quick Links
-                </h4>
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            Quick Links
+                        </h4>
 
-                <ul class="space-y-3 text-slate-400">
-                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
-                    <li><a href="#coursesContainer" class="hover:text-white transition">Library Resources</a></li>
-                    <li><a href="#teachersection" class="hover:text-white transition">Library Team</a></li>
-                    <li><a href="#faq" class="hover:text-white transition">FAQs</a></li>
-                </ul>
-            </div>
+                        <ul class="space-y-3 text-slate-400">
+                            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                            <li><a href="#coursesContainer" class="hover:text-white transition">Library Resources</a>
+                            </li>
+                            <li><a href="#teachersection" class="hover:text-white transition">Library Team</a></li>
+                            <li><a href="#faq" class="hover:text-white transition">FAQs</a></li>
+                        </ul>
+                    </div>
 
-            <!-- Contact -->
-            <div>
-                <h4 class="text-xl font-semibold text-white mb-4">
-                    Contact Information
-                </h4>
+                    <!-- Contact -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            Contact Information
+                        </h4>
 
-                <p class="text-slate-400">
-                    Phone:
-                    <a href="tel:+919241296570" class="hover:text-white transition">
-                        +91 9241296570
-                    </a>
-                </p>
+                        <p class="text-slate-400">
+                            Phone:
+                            <a href="tel:+919241296570" class="hover:text-white transition">
+                                +91 9241296570
+                            </a>
+                        </p>
 
-                <p class="text-slate-400">
-                    Email:
-                    <a href="mailto:library@gpmuzaffarpur.ac.in"
-                        class="hover:text-white transition">
-                        library@gpmuzaffarpur.ac.in
-                    </a>
-                </p>
+                        <p class="text-slate-400">
+                            Email:
+                            <a href="mailto:library@gpmuzaffarpur.ac.in" class="hover:text-white transition">
+                                library@gpmuzaffarpur.ac.in
+                            </a>
+                        </p>
 
-                <p class="text-slate-400">
-                    Address:<br>
-                    Government Polytechnic Muzaffarpur,<br>
-                    Muzaffarpur, Bihar - 842001
-                </p>
+                        <p class="text-slate-400">
+                            Address:<br>
+                            Government Polytechnic Muzaffarpur,<br>
+                            Muzaffarpur, Bihar - 842001
+                        </p>
 
-                <br>
+                        <br>
 
-                <p class="text-slate-400">
-                    <i class="fa-brands fa-whatsapp"
-                        style="color: rgb(99, 230, 190); font-size:25px;"></i>
+                        <p class="text-slate-400">
+                            <i class="fa-brands fa-whatsapp" style="color: rgb(99, 230, 190); font-size:25px;"></i>
 
-                    <a href="tel:+919241296570"
-                        class="hover:text-white transition">
-                        +91 9241296570
-                    </a>
-                </p>
+                            <a href="tel:+919241296570" class="hover:text-white transition">
+                                +91 9241296570
+                            </a>
+                        </p>
 
-            </div>
+                    </div>
 
-            <!-- Social -->
-            <div>
-                <h4 class="text-xl font-semibold text-white mb-4">
-                    Follow Us
-                </h4>
+                    <!-- Social -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            Follow Us
+                        </h4>
 
-                <ul class="social-ul">
+                        <ul class="social-ul">
 
-                    <li class="social-li">
-                        <a href="https://www.instagram.com/"
-                            target="_blank"
-                            aria-label="Instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
+                            <li class="social-li">
+                                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
 
-                    <li class="social-li">
-                        <a href="https://twitter.com"
-                            target="_blank"
-                            aria-label="Twitter">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
+                            <li class="social-li">
+                                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
 
-                    <li class="social-li">
-                        <a href="https://facebook.com"
-                            target="_blank"
-                            aria-label="Facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
+                            <li class="social-li">
+                                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
 
-                    <li class="social-li">
-                        <a href="https://linkedin.com"
-                            target="_blank"
-                            aria-label="LinkedIn">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </li>
+                            <li class="social-li">
+                                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
 
-                </ul>
-            </div>
+                        </ul>
+                    </div>
 
-        </div>
+                </div>
 
-        <div class="mt-12 border-t border-slate-800 pt-6 text-center text-slate-500 text-sm">
-            © 2026 Government Polytechnic Muzaffarpur Digital Library. All Rights Reserved.
-        </div>
+                <div class="mt-12 border-t border-slate-800 pt-6 text-center text-slate-500 text-sm">
+                    © 2026 Government Polytechnic Muzaffarpur Digital Library. All Rights Reserved.
+                </div>
 
-    </section>
-</footer>
+            </section>
+        </footer>
     </div>
 
 
@@ -795,9 +854,10 @@
 
 
     <script src="js/animate.js"></script>
+    <script src="js/loadinganimation.js"></script>
     <script src="js/hero.js"></script>
     <script src="js/course.js"></script>
-
+    <script src="js/nav.js"> </script>
     <script src="js/script.js"></script>
 
 
