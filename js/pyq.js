@@ -46,6 +46,12 @@ const pyqs = [
         name: `(Sem-II (OBE)) Diploma Exam 2025 (Even)
                 Python Programming (T2418103)`,
         link: `./Pyq pdf/2025 sem 2 python.pdf`
+    }, 
+     {
+        name: `(Sem-II (OBE)) Diploma Exam 2025 (Even)
+                (Computer Science & Engineering) (Theory)
+                 Programming with C (T2418101) `, 
+        link: `./Pyq pdf/programingwith c2025 sem 11.pdf`
     }
 
 ];
