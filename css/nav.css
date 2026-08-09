@@ -50,3 +50,9 @@
 .side-menu.active {
     left: 0;                   /* Show menu */
 }
+
+#loader {
+    perspective: 1200px;
+    transform-origin: left center;
+    backface-visibility: hidden;
+}

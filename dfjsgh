@@ -1,0 +1,476 @@
+<!-- Notes Download Section -->
+        <section class="w-full py-12 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4">
+
+                <!-- Heading -->
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">
+                        Download PYQ
+                    </h2>
+                    <p class="mt-2 text-gray-600">
+                        Download semester-wise study notes in PDF format.
+                    </p>
+                </div>
+
+                <!-- Responsive Table -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+
+                    <!-- Header (Hidden on Mobile) -->
+                    <div class="hidden md:grid grid-cols-12 bg-blue-600 text-white font-semibold">
+                        <div class="col-span-9 px-6 py-4">
+                            Previous Year Question Paper
+                        </div>
+
+                        <div class="col-span-3 px-6 py-4 text-center">
+                            Download
+                        </div>
+                    </div>
+
+                    <!-- Row 1 -->
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                Sem-1 OBE 2025 (Odd)
+
+                                Fundamental of IT System (C.S.E)
+                                (T2418104)
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/fudamental of itsystem 2025 sem1 odd.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                Sem-1_OBE Diploma Exam 2025 (Odd)
+
+                                Fund. of Elect & Electro Engg. (C.S.E)
+                                (T2420103)
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/fund elect elctro 2025 odd sem1.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                Sem-1 OBE Diploma Exam 2025 (Odd)
+
+                                Applied Physics -B (C.S.E) (T2400102B)
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/physic b 2025 sem1.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                Sem-1_2 Diploma Exam 2025 (Odd)
+
+                                Applied Physics-I (C.S.E) (P2001102)
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/applied physics 1 2025 sem1.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 5 -->
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                Sem-1_2 Diploma Exam 2025 (Odd)
+
+                                Mathematics-II (C.S.E) (P2002201)
+
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/mathmatics 11 2025 sem 1.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Row 6 -->
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                Sem-1_2 Diploma Exam 2025 (Odd)
+
+                                Mathematics-I (C.S.E) (2001101)
+
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/mathmatics 1 2025 sem 1.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Row 7 -->
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                (Sem- II (OBE)) Diploma Exam 2025 (Even)
+
+                                Python Programming (T2418103)
+
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/2025 sem 2 python.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 8 -->
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                (Sem- II (OBE)) Diploma Exam 2025 (Even)
+
+                                Python Programming (T2418103)
+
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/2025 sem 2 python.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Row 9 -->
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                (Sem- II (OBE)) Diploma Exam 2025 (Even)
+
+                                Python Programming (T2418103)
+
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/2025 sem 2 python.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Row 10 -->
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                (Sem- II (OBE)) Diploma Exam 2025 (Even)
+
+                                Python Programming (T2418103)
+
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/2025 sem 2 python.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                      <!-- Row 11 -->
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                (Sem- II (OBE)) Diploma Exam 2025 (Even)
+
+                                Python Programming (T2418103)
+
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/2025 sem 2 python.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+         <!-- Right Content -->
+
+                    <div class="flex justify-center">
+
+                        <div class="relative">
+
+                            <!-- Main Card -->
+
+                            <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-10 w-[360px]">
+
+                                <div class="text-center">
+
+                                    <div class="text-8xl">
+
+                                        📚
+
+                                    </div>
+
+                                    <h2 class="text-3xl font-bold mt-5">
+
+                                        CSE Curriculum
+
+                                    </h2>
+
+                                    <p class="text-slate-300 mt-4">
+
+                                        Semester-wise official syllabus
+                                        for Diploma in Computer Science &
+                                        Engineering.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4 mt-8">
+
+                                    <div class="bg-blue-500/20 rounded-xl p-4 text-center">
+
+                                        <div class="text-3xl">
+
+                                            📄
+
+                                        </div>
+
+                                        <p class="mt-2 text-sm">
+
+                                            PDF Files
+
+                                        </p>
+
+                                    </div>
+
+                                    <div class="bg-green-500/20 rounded-xl p-4 text-center">
+
+                                        <div class="text-3xl">
+
+                                            🎓
+
+                                        </div>
+
+                                        <p class="mt-2 text-sm">
+
+                                            SBTE Bihar
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Floating Card -->
+
+                            <div class="absolute -top-8 -right-8 bg-blue-600 rounded-2xl p-5 shadow-2xl">
+
+                                <i class="fa-solid fa-graduation-cap text-4xl"></i>
+
+                            </div>
+
+                            <!-- Floating Card -->
+
+                            <div class="absolute -bottom-6 -left-8 bg-violet-600 rounded-2xl p-5 shadow-2xl">
+
+                                <i class="fa-solid fa-file-pdf text-4xl"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                       <!-- Row 1 -->
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                Sem-1 OBE 2025 (Odd)
+
+                                Fundamental of IT System (C.S.E)
+                                (T2418104)
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/fudamental of itsystem 2025 sem1 odd.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 border-b hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                Sem-1_OBE Diploma Exam 2025 (Odd)
+
+                                Fund. of Elect & Electro Engg. (C.S.E)
+                                (T2420103)
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/fund elect elctro 2025 odd sem1.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- Row 11 -->
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-0 px-5 py-5 hover:bg-blue-50 transition">
+
+                        <div class="md:col-span-9">
+                            <p class="text-xs text-gray-500 md:hidden mb-1">
+                                Notes Name
+                            </p>
+
+                            <h3 class="font-medium text-slate-800">
+                                (Sem- II (OBE)) Diploma Exam 2025 (Even)
+
+                                Python Programming (T2418103)
+
+                            </h3>
+                        </div>
+
+                        <div class="md:col-span-3 md:text-center">
+                            <a href="./Pyq pdf/2025 sem 2 python.pdf"
+                                class="inline-block w-full md:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
